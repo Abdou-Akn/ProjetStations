@@ -1,0 +1,15 @@
+CREATE TABLE postsp2 (
+	    id serial,
+	    auteur character varying(100),
+	    station character varying(100),
+	    titre character varying(100),
+	    contenu character varying(1024),
+        datecreation timestamp,
+	    nblike integer,
+	    nbnolike integer
+
+);
+
+ALTER TABLE ONLY postsp2
+    ADD CONSTRAINT postsp2_pkey PRIMARY KEY (id);
+

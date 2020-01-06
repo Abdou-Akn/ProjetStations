@@ -1,0 +1,135 @@
+/**
+* @author AKENIOUENE Abderrahmane
+*/
+
+
+@keyframes masuperanimation {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+}
+
+body{
+    background-color:rgb(224, 248, 224);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-image: url('../images/ways.gif');
+    background-size: 90%;
+}
+h1{
+    background-repeat:no-repeat;
+    background-position:center;
+    background-image: url('../images/petrol.gif');
+    background-size: 80px 80px ;
+    background-position: left;
+
+    text-align: center;
+    color: rgb(110, 109, 109);
+    background-color: rgb(224, 248, 224,0.8);
+    font-weight: bold;
+    font-size: 60px;
+}
+#error{
+    font-size: 20px;
+    position: absolute;
+    left: 150px;
+    top:100px;
+    background-color: rgb(238, 179, 171)
+}
+#noerror{
+    font-size: 20px;
+    position: absolute;
+    left: 150px;
+    top:100px;
+    background-color: rgb(161, 255, 160)
+}
+form {
+    padding:10px;
+    margin-left: 10%;
+    width:280px;
+    float:left;
+    margin-top: 0%;
+    }
+fieldset {
+    background-color: rgb(194, 226, 194,0.9);
+    border-radius: 15px;
+    padding:20px 20px 20px 20px;
+    margin-bottom:10px;
+    border:1px solid #e0f8da;
+    box-shadow:1px 2px 1px #4e4e4e;
+
+ }
+label {
+    margin-top:10px;
+    display:block;
+ }
+
+input{
+    background-color:rgb(224, 248, 224,0.8);
+    padding:3px;
+    border:1px solid #e0f8da;
+    border-radius:5px;
+    width:200px;
+    box-shadow:1px 1px 1px #363535;
+ }
+
+
+input[type=checkbox] {
+    box-shadow:1px 1px 1px #636060;
+    border-radius: 15px;
+    cursor: pointer;
+    width:150px;
+ }
+
+ input[type=checkbox]:active{
+    animation: masuperanimation 1s; 
+}
+input[type=submit], input[type=reset] {
+    width:100px;
+    margin-left:25px;
+    border:1px solid #e0f8da;
+    box-shadow:1px 2px 1px #4e4e4e;
+    cursor:pointer;
+ }
+
+ #carte0{
+    width : 530px;
+    height : 380px;
+    border-radius:15px;
+    margin-top:2%;
+    float : right,top;
+    margin-left: 10%;
+    border:1px solid #e0f8da;
+    background-color:rgb(194, 226, 194,0.9);
+    display :inline-block;
+    transition:all 1s;
+    box-shadow:1px 2px 1px #4e4e4e;
+
+
+}
+#carte {
+    width : 500px;
+    height : 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:14px;
+    margin-bottom: auto;
+    transition:all 1s;
+
+}
+#carte:hover{ 
+    width:600px;
+    height : 450px;
+}
+
+#carte0:hover{
+    margin-left: 7%;
+    margin-top: 0px;
+    width:630px;
+    height : 480px;
+}
+
+ 

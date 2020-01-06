@@ -1,0 +1,361 @@
+html,body{
+  height: 100%;
+  background-color: beige;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+partie sur le boutton homburger
+*/
+.btn{
+  height: 30px;
+  width: 30px;
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.btn span{
+  height: 3px;
+  background-color: #636e72;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.btn span:before{
+    content: '';
+    height: 3px;
+    background-color: #636e72;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+.btn span:after{
+  content: '';
+  height: 3px;
+  background-color: #636e72;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+/*Le menu*/
+.menu{
+  top : 0;
+  height: 100%;
+  background-color:  #636e72;
+  opacity: 1.5;
+  width: 200px;
+  box-shadow:1px 3px 2px #2d3436;
+}
+
+.menu a{
+  color: beige;
+  font-family: sans-serif;
+  text-align: center;
+  display: block;
+  margin-top: 60px;
+  text-decoration: none;
+}
+
+.menu img{
+  margin-top: 20px;
+}
+
+.nav{
+  position: absolute;
+
+  margin-left: -200px;
+  transition-duration: 0.2s;
+}
+
+.nav_opened{
+  position: absolute;
+  margin-left: 0px;
+  transition-duration: 0.2s;
+}
+
+
+/*partie sur les  stations*/
+#section_station{  
+  margin-top: 100px;
+  margin-left: 100px;
+  top:50px;
+  height : 250px;
+}
+
+
+div.resultat{
+  display: block;
+  text-align: center;
+  margin-left: 100px;
+  top:50px;
+  height : 250px;
+}
+
+#section_station h2{
+  text-align : center;
+  margin-right: 50px;
+  padding : 10px;
+  top:50px;
+}
+
+ #titre_connecte{
+  text-align: center;
+}
+
+
+#form_login{
+  width: 250px;
+  margin-top:120px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align : center;
+}
+
+/*upload d'information utiilisateur*/
+#upInfo,#upAvatar{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align : center;
+}
+
+
+body>h1 {
+  color : darkgrey;
+  text-align : center;
+  margin : 0;
+  padding : 10px;
+  background-color :#dfe6e9;
+}
+
+
+/*hphoto de profil dans le menu*/
+#avatar{
+  margin-left: 55px;
+text-align: center;
+   max-width : 80px;
+ max-height : 100px;
+}
+
+table {
+  border-collapse : collapse;
+}
+table td {
+  border : solid 1pt black;
+  padding : 3pt;
+}
+
+#padre>p{
+margin-left: 130px;
+margin-top: 20px;
+  text-align: left;
+  font-size: 70;
+  display: block;
+}
+
+.description{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#padre{
+  margin-top: 50px;
+}
+
+
+#posts {
+  position: absolute;
+  margin-left: 100px;
+  transition-duration: 1s;
+
+}
+
+/*partie accueil recherche*/
+form#recherche {
+  margin-left: 10%;
+  padding-top: 30px;;
+  width:280px;
+  display :inline-block;
+  }
+fieldset {
+  background-color: rgb(194, 226, 194,0.9);
+  border-radius: 15px;
+  padding:10px 10px 10px 10px;
+  margin-bottom:10px;
+  border:1px solid #e0f8da;
+  box-shadow:1px 2px 1px #4e4e4e;
+
+}
+label {
+  margin-top:10px;
+  display:block;
+}
+
+input{
+  background-color:rgb(224, 248, 224,0.8);
+  padding:3px;
+  border:1px solid #e0f8da;
+  border-radius:5px;
+  width:200px;
+  box-shadow:1px 1px 1px #363535;
+}
+
+legend{
+  padding-bottom: 15px;
+}
+
+input[type=checkbox] {
+  box-shadow:1px 1px 1px #636060;
+  border-radius: 15px;
+  cursor: pointer;
+  width:150px;
+}
+
+input[type=checkbox]:active{
+  animation: masuperanimation 1s;
+}
+input[type=submit], input[type=reset] {
+  width:100px;
+  margin-left:25px;
+  border:1px solid #e0f8da;
+  box-shadow:1px 2px 1px #4e4e4e;
+  cursor:pointer;
+}
+
+/*la map google*/
+#carte {
+  width : 500px;
+  height : 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:14px;
+  margin-bottom: auto;
+  transition:all 1s;
+
+}
+#carte0{
+  width : 530px;
+  height : 380px;
+  border-radius:15px;
+  margin-top:2%;
+  float : right,top;
+  margin-left: 10%;
+  border:1px solid #e0f8da;
+  background-color:rgb(194, 226, 194,0.9);
+  display :inline-block;
+  box-shadow:1px 2px 1px #4e4e4e;
+
+}
+
+#donnerMonAvis{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 30%;
+  padding : 30px 30px 30px 30px;
+  width: 250px;
+
+}
+
+#infosStations{
+  position: absolute;
+  margin-top: 10px;
+  padding : 30px 30px 30px 30px;
+  width: 250px;
+}
+
+#boutonLike, #boutonNoLike{
+  width:15px;
+  height: 15px;
+  padding-left: 40px;
+  text-decoration: none;
+
+}
+
+#PostsStations{
+  position: absolute;
+  height: 500px;
+margin-left: 60%;
+margin-top: 40px;
+overflow:scroll;
+}
+
+#dateCreationPost{
+  color:rgb(192, 188, 188);
+  font-size: small;
+}
+
+/*je reduis l'espacement entre les elements p*/
+p{
+  margin:.5em 0;
+}
+
+/*petite photo de profil dans les commentaires*/
+img#miniature{
+  widows: 20px;
+  height: 20px;
+}
+
+#comments{
+  width: 400px;
+}
+
+ #submitLogin{
+   margin-top: 20px;
+ }
+
+#validerCommentaire, #validerNotes{
+  margin-top: 20px;
+  margin-left: 50px;
+}
+/*en ce qui conserne le profil lui meme*/
+#figure{
+  margin-top: 0px;
+
+}
+
+#profilPhoto{
+  width: 180px;
+  height: 180px;
+}
+
+#nom{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+}
+
+button#changeInformations,button#changePhoto{
+  margin-left: 43%;
+}
+
+
+/*ence qui conserne les postes de l'utilisateur*/
+#padrePosts{
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+#formDeletePost{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3{
+  margin-left: 65px;
+}
+
+#zoneCreation{
+  width: 300px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
